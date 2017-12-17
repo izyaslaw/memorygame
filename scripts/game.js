@@ -138,6 +138,7 @@ function checkEndGame() {
 }
 
 function changeScore() {
+    $("#score").text("Очки: " + score);
     $("#realScore").text(score);
 }
 
