@@ -1,3 +1,12 @@
+arrRatings = ["0", "A", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"];
+arrSuits = ["C", "D", "H", "S"];
+$(new Image()).attr('src', 'images/Cards/rubashka.png')
+arrRatings.forEach(function (rating) {
+    arrSuits.forEach(function (suit) {
+        $(new Image()).attr('src', 'images/Cards/'+ rating + suit +'.png')
+    })
+})
+
 gameArray = [];
 for (i=0; i<3; i++) {
     var line = [];
@@ -129,7 +138,6 @@ function checkEndGame() {
 }
 
 function changeScore() {
-    $("#score").text("Очки: " + score);
     $("#realScore").text(score);
 }
 
@@ -192,3 +200,4 @@ $(document).ready(function() {
         }
     });
 });
+
