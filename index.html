@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/createCardPlace.js"></script>
+    <script type="text/javascript" src="scripts/buttonStartGame.js"></script>
+    <script type="text/javascript" src="scripts/game.js"></script>
+    <title>MEMORY GAME</title>
+</head>
+<body>
+    <p id="realScore" data-tid="Menu-scores">0</p>
+    <audio id="shuffle"><source src="sounds/shuffle.mp3"></audio>
+    <audio id="take"><source src="sounds/take.mp3"></audio>
+    <audio id="yeah"><source src="sounds/yeah.mp3"></audio>
+    <!--<audio id="win"><source src="sounds/win.mp3"></audio>-->
+    <div id="mainCont" data-tid="App">
+        <div id="start-menu">
+            <img id="start-img" src="images/assets/StartGame.png">
+            <p class="game-text">MEMORY GAME</p>
+            <div class="new-game-button" id="start-game" data-tid="NewGame-startGame">
+                <p class="start-game-text">Начать игру</p>
+            </div>
+        </div>
+        <div id="game">
+            <div id="status-bar">
+                <p id="restart" data-tid="Menu-newGame">Начать заново</p>
+                <p id="score">Очки: 0</p>
+            </div>
+            <div id="game-field" data-tid="Deck">
+                <div class="cards-line" id="line-1">
+                    <div class="card" id="1-1" data-tid="Card"></div>
+                    <div class="card" id="1-2" data-tid="Card"></div>
+                    <div class="card" id="1-3" data-tid="Card"></div>
+                    <div class="card" id="1-4" data-tid="Card"></div>
+                    <div class="card" id="1-5" data-tid="Card"></div>
+                    <div class="card" id="1-6" data-tid="Card"></div>
+                </div>
+                <div class="cards-line" id="line-2">
+                    <div class="card" id="2-1" data-tid="Card"></div>
+                    <div class="card" id="2-2" data-tid="Card"></div>
+                    <div class="card" id="2-3" data-tid="Card"></div>
+                    <div class="card" id="2-4" data-tid="Card"></div>
+                    <div class="card" id="2-5" data-tid="Card"></div>
+                    <div class="card" id="2-6" data-tid="Card"></div>
+                </div>
+                <div class="cards-line" id="line-3">
+                    <div class="card" id="3-1" data-tid="Card"></div>
+                    <div class="card" id="3-2" data-tid="Card"></div>
+                    <div class="card" id="3-3" data-tid="Card"></div>
+                    <div class="card" id="3-4" data-tid="Card"></div>
+                    <div class="card" id="3-5" data-tid="Card"></div>
+                    <div class="card" id="3-6" data-tid="Card"></div>
+                </div>
+            </div>
+        </div>
+        <div id="end-game">
+            <img id="end-img" src="images/assets/Group%202.png">
+            <p class="game-text">Поздравляем</p>
+            <p class="game-text" id="resultScore"></p>
+            <div class="new-game-button" data-tid="EndGame-retryGame">
+                <p class="start-game-text">Ещё раз</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

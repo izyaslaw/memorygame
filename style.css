@@ -1,0 +1,147 @@
+body {
+    background-color: gold;
+}
+
+#start-menu {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#end-game {
+    vertical-align: middle;
+    display: none;
+}
+
+.game-text {
+    text-align: center;
+    color: rgb(221, 234, 224);
+    font-size: 30px;
+    font-family: "Arial";
+}
+
+#start-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+
+#end-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+
+
+.text-menu {
+    margin: 0;
+    position: relative;
+    width: 50%;
+}
+
+.start-game-text {
+    font-family: Arial;
+    color: rgb(29,107,47);
+    font-size: 20px;
+    text-align: center;
+    padding: 9px 0 9px 0;
+}
+
+.new-game-button {
+    margin: 0 auto;
+    background-color: rgb(221, 234, 224);
+    width: 150px;
+    height: 41px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.new-game-button:hover {
+    transition-duration: 0.5s;
+    background-color: rgb(255, 255, 255)
+}
+
+.new-game-button:active {
+    transition-duration: 0s;
+    background-color: gray;
+}
+
+#game {
+    vertical-align: middle;
+    display: none;
+    width: 900px;
+}
+
+#restart {
+
+    transition-duration: 0.5s;
+    margin: 0;
+    width: 43%;
+}
+
+#restart:hover {
+    transition-duration: 0.5s;
+    color: rgb(255,255,255);
+}
+
+#score {
+    text-align: right;
+    margin: 0;
+    width: 43%;
+    /*padding-right: 20px;*/
+}
+
+#realScore {
+    display: none;
+}
+
+#status-bar {
+    width: 100%;
+}
+
+#status-bar > p {
+    font-family: Arial;
+    color: rgb(221, 234, 224);
+    font-size: 20px;
+    display: inline-table;
+    padding-left: 41px;
+}
+
+.cards-line {
+    text-align: center;
+}
+
+.card {
+    margin: 12px;
+    width: 113px;
+    height: 157px;
+    display: inline-block;
+    background-size: 113px 157px;
+    border-radius: 10px;
+    background-image: url("images/Cards/rubashka.png");
+}
+
+#mainCont {
+    min-width: 900px;
+    min-height: 600px;
+    width: 800px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(29,107,47);
+    border-radius: 20px;
+    border-style: groove;
+    display: table;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
