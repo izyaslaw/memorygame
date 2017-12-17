@@ -1,5 +1,5 @@
 body {
-    background-color: lightgrey;
+    background-color: gold;
     min-width: 1200px;
     min-height: 1000px;
 }
@@ -135,6 +135,8 @@ body {
     border-radius: 20px;
     border-style: groove;
     display: table;
+    position: absolute;
+    top: 10%;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
