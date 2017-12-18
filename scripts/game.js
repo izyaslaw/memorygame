@@ -1,9 +1,17 @@
 arrRatings = ["0", "A", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"];
 arrSuits = ["C", "D", "H", "S"];
+var counterPreload = 0
+var canPressEnter = false;
 $(new Image()).attr('src', 'images/Cards/rubashka.png')
 arrRatings.forEach(function (rating) {
     arrSuits.forEach(function (suit) {
-        $(new Image()).attr('src', 'images/Cards/'+ rating + suit +'.png')
+        $(new Image()).attr('src', 'images/Cards/'+ rating + suit +'.png').load(function () {
+            counterPreload++;
+            if (counterPreload == 52) {
+                canPressEnter = true;
+                $(".new-game-button").css({"pointer-events" : "auto"})
+            }
+        });
     })
 })
 
