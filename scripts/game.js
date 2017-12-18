@@ -10,6 +10,7 @@ arrRatings.forEach(function (rating) {
             if (counterPreload == 52) {
                 canPressEnter = true;
                 $(".new-game-button").css({"pointer-events" : "auto"})
+                alert("ready");
             }
         });
     })
